@@ -1,0 +1,23 @@
+{
+  "name": "shopfleet-payments",
+  "description": "Payment processing service",
+  "version": "1.0.0",
+  "role": "service",
+  "build": {
+    "command": "npm run build",
+    "artifacts": ["dist/"]
+  },
+  "test": {
+    "command": "npm test"
+  },
+  "lint": {
+    "command": "npm run lint"
+  },
+  "dependencies": [
+    "shopfleet-shared",
+    "shopfleet-orders"
+  ],
+  "dependents": [
+    "shopfleet-notifications"
+  ]
+}

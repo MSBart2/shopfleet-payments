@@ -1,0 +1,28 @@
+{
+  "name": "@shopfleet/payments",
+  "version": "1.0.0",
+  "description": "Payment processing service for ShopFleet",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "lint": "eslint src/"
+  },
+  "keywords": ["shopfleet", "payments", "stripe"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "tsx": "^4.10.0",
+    "vitest": "^2.0.0",
+    "eslint": "^9.0.0",
+    "@types/express": "^4.17.0",
+    "@types/node": "^20.0.0"
+  },
+  "dependencies": {
+    "@shopfleet/shared": "^1.0.0",
+    "express": "^4.19.0"
+  }
+}
