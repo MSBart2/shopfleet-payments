@@ -11,18 +11,22 @@
     "test": "vitest run",
     "lint": "eslint src/"
   },
-  "keywords": ["shopfleet", "payments", "stripe"],
+  "keywords": [
+    "shopfleet",
+    "payments",
+    "stripe"
+  ],
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.4.0",
-    "tsx": "^4.10.0",
-    "vitest": "^2.0.0",
-    "eslint": "^9.0.0",
     "@types/express": "^4.17.0",
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "eslint": "^9.0.0",
+    "tsx": "^4.10.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
   },
   "dependencies": {
-    "@shopfleet/shared": "^1.0.0",
+    "@shopfleet/shared": "file:../shopfleet-shared/shopfleet-shared-1.0.0.tgz",
     "express": "^4.19.0"
   }
 }
